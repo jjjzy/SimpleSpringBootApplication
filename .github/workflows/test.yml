@@ -21,7 +21,7 @@ jobs:
         run: mvn -B test --file pom.xml
 
       - name: build application
-        run: mvn -B clean package install --file pom.xml
+        run: mvn -B clean package --file pom.xml
 
 
       - name: Set up QEMU
