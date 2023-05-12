@@ -1,0 +1,9 @@
+name: Build and deploy this application
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
