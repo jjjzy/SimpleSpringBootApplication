@@ -39,9 +39,5 @@ jobs:
       - name: build and push
         uses: docker/build-push-action@v4
         with:
-          context: .
-          file: ./Dockerfile
           push: true
-          tags: ${{secrets.dockerUsername}}/simplespringbootapplication:latest
-          secrets: |
-            GIT_AUTH_TOKEN = "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"
+          tags: jjjzy/simplespringbootapplication:latest
