@@ -15,5 +15,7 @@ jobs:
         with:
           java-version: '11'
           distribution: 'zulu'
-      - name: build test
+      - name: run test
         run: mvn -B test --file pom.xml
+      - name: build application
+        run: mvn -B clean package --file pom.xml
